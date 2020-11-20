@@ -3,13 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sakuma no jikosyokai</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>sakuma page</title>
   </head>
   <body>
-    <h2><p>itazura test</p></h2>
-    <p>itazura test</p>
-    <p>itazura test</p>
-    <p>itazura test</p>
-    <p>itazura test</p>
+    <div id="app" class="bg-blue-400 min-h-screen flex justify-center items-center text-white">
+      <div class="centered mb-10 px-3">
+        <h2 class="text-4xl text-center mb-8">{{title}}</h2>
+        <div class="flex flex-col sm:flex-row justify-center mb-8">
+          <div class="right">
+            <div class="flex justify-center mb-8"><img src="./img/sakuma.jpg" alt="" class="max-h-64" /></div>
+          </div>
+          <div class="left text-center text-sm sm:ml-10 sm:text-left">
+            <div class="mb-4">
+              <p class="mb-3">おかげさまでフリーター&ニート脱出できました!!</p>
+              <p class="mb-3">大卒後は音楽やりながらプー太郎してました。</p>
+              <p class="mb-3">プログラミング歴は2,3年です。<br />(途中ブランクあり、フルタイムは現職が初)</p>
+              <p class="mb-3">好きなフレームワークはNuxtとRailsです。</p>
+              <p class="mb-3">好きなミュージシャンはShai MaestroとJanek Gwizdala です。</p>
+            </div>
+            <div class="flex justify-center sm:justify-start">
+              <p><a href="https://www.youtube.com/watch?v=25VnjSDwgIw" target="_blank" rel="noopener noreferrer" class="pb-1 border-b-2 hover:opacity-70">shaiの動画</a></p>
+              <p><a href="https://www.youtube.com/watch?v=lexG8HeQzsE" target="_blank" rel="noopener noreferrer" class="ml-4 pb-1 border-b-2 hover:opacity-70">janekの動画</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="./index.html" class="hover:opacity-70">BACK</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          title: 'sakuma desu',
+        },
+      })
+    </script>
   </body>
 </html>
