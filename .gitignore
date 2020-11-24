@@ -2,3 +2,5 @@
 ignored.html
 
 ## node_moduleとか環境変数が書かれてるファイルとかはgit管理しない事が多いです。
+
+.DS_Store
